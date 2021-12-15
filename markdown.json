@@ -1,0 +1,35 @@
+{
+  "com": {
+    "prefix": "com",
+    "description": "",
+    "body": [
+      "# Copyright",
+      "",
+      "Copyright",
+      "",
+      "### Usage",
+      "",
+      "```ts",
+      "import Copyright from '@/components/Copyright';",
+      "",
+      "<Copyright />;",
+      "```",
+      "",
+      "| 参数 | 说明 | 类型 | 可选值 | 默认值 |",
+      "| ---- | ---- | ---- | ------ | ------ |",
+      "|      |      |      |        |        |",
+      "",
+      "### NOTE",
+      "",
+      "注意事项",
+      "",
+      "### TODO",
+      "",
+      "- [x] TODO 1",
+      "- [] TODO 2",
+      "- [] TODO 3",
+      "- [] TODO 4",
+      ""
+    ]
+  }
+}

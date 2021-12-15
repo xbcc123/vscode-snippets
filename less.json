@@ -1,0 +1,16 @@
+{
+  "index": {
+    "prefix": "index",
+    "description": "",
+    "body": [
+      "@import (reference)\"../../../styles/index.less\";",
+      "",
+      "@prefix-cls: index;",
+      "@width: 500px;",
+      "",
+      ".@{prefix-cls} {",
+      "    width: @width;",
+      "}"
+    ]
+  }
+}

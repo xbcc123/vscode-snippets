@@ -1,0 +1,61 @@
+{
+  "ctree": {
+    "prefix": "ctree",
+    "description": "",
+    "body": [
+      "function Node(val) {",
+      "    this.val = val",
+      "    this.left = null",
+      "    this.right = null",
+      "    return {",
+      "        val,",
+      "        left: this.left,",
+      "        right: this.right,",
+      "    }",
+      "}",
+      "",
+      "const createTree = (arr) => { // 创建二叉树",
+      "    let tree = new Node(arr[0])",
+      "    let Nodes = [tree]",
+      "    let i = 1",
+      "    for (let node of Nodes) {",
+      "        Nodes.push(node.left = new Node(arr[i]))",
+      "        i += 1",
+      "        if (i == arr.length) return tree",
+      "        Nodes.push(node.right = new Node(arr[i]))",
+      "        i += 1",
+      "        if (i == arr.length) return tree",
+      "    }",
+      "}",
+      "let datas = [1, 1]",
+      "let t = createTree(datas)",
+      "console.log(t)",
+      "",
+      "",
+      ""
+    ]
+  },
+  "cline": {
+    "prefix": "cline",
+    "description": "",
+    "body": [
+      "/**",
+      " * 将数组转换为链表",
+      " * @param array arr  需要转换的数组",
+      " * @param int  type  转换的类型，0为单链表，1为循环链表",
+      " * @return object    返回链表",
+      " */",
+      "function array2List(arr, type = 0) {",
+      "    if (!arr.length) return null;",
+      "    let header = { index: 0, data: arr[0], next: null };",
+      "    let obj = header;",
+      "    for (let i = 1; i < arr.length; i++) {",
+      "        obj.next = { index: i, data: arr[i], next: null };",
+      "        obj = obj.next;",
+      "    }",
+      "    if (type) obj.next = header;",
+      "    return header;",
+      "}"
+    ]
+  }
+}
